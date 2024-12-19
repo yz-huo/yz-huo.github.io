@@ -22,6 +22,6 @@ body {
     cursor: pointer;
 }
 
-#box1 { top: 100px; left: 200px; }
+#box1 { top: 50px; left: 100px; }
 #box2 { top: 100px; left: 200px; }
-#box3 { top: 100px; left: 200px; }
+#box3 { top: 150px; left: 300px; }
