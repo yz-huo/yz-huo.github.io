@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
         button.addEventListener("click", () => {
             const userchoice = button.id;
             const computer = options[Math.floor(Math.random() * 3)];
-            const result = calculatewinner(userchoice, computer);
+            const results = calculatewinner(userchoice, computer);
 
             document.getElementById("results").innerText =
-                    `You chose ${userchoice}. Computer chose ${computer}. ${result}`;
+                    `You chose ${userchoice}. Computer chose ${computer}. ${results}`;
                 });
               });
 
