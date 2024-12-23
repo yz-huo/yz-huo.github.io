@@ -14,9 +14,9 @@ body {
 }
 
 #results {
+    margin-top: 150px;
     font-size:24px;
     background-color: #ee948d;
-    position: absolute;
     border-radius: 10px;
     cursor: pointer;
 }
