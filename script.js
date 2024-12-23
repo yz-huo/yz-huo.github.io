@@ -15,18 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function calculatewinner(userchoice, computer){
         if (computer == userchoice):
-        return "draw";
-    elif (computer == "rock")& (userchoice == "paper"):
-        return "you win";
-    elif (computer == "rock")& (userchoice == "scissors"):
-        return "you lose";
-    elif (computer == "paper")& (userchoice == "rock"):
-        return "you lose";
-    elif (computer == "paper")& (userchoice == "scissors"):
-        return "you win";
-    elif (computer == "scissors")& (userchoice == "rock"):
-        return "you win";
-    elif (computer == "scissors")& (userchoice == "paper"):
-        return "you lose";
+        { return "draw!"; }
+    elif (computer == "rock")& (userchoice == "paper")
+        { return "You win!"; }
+    elif (computer == "rock")& (userchoice == "scissors")
+        { return "You lose!"; }
+    elif (computer == "paper")& (userchoice == "rock")
+        { return "You lose!"; }
+    elif (computer == "paper")& (userchoice == "scissors")
+        { return "You win!"; }
+    elif (computer == "scissors")& (userchoice == "rock")
+        { return "You win!"; }
+    elif (computer == "scissors")& (userchoice == "paper")
+        { return "You lose!"; }
     }
 });
