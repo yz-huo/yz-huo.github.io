@@ -1,14 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const boxes = document.querySelectorAll(".clickable");
-    const winningBox = "box2"; // Randomize this for more fun!
+    const options = ["rock", "paper", "scissors"];
 
-    boxes.forEach(box => {
-        box.addEventListener("click", () => {
-            if (box.id === winningBox) {
-                alert("You found the treasure!");
-            } else {
-                alert("Try again!");
-            }
-        });
-    });
+    document.querySelectorAll("button").forEach(button => {
+        button.addEventListener("click", () => {
+            const userchoice = button.id;
+            const computer = options[Math.floor(Math.random() * 3)];
+            const result = calculatewinner(userchoice, computer);
+
+            document.getElementById("results").innerText =
+                    `You chose ${userchoice}. Computer chose ${computer}. ${result}`;
+                });
+              });
+
+
+    function calculatewinner(userchoice, computer){
+        if (computer == userchoice):
+        return "draw";
+    elif (computer == "rock")& (userchoice == "paper"):
+        return "you win";
+    elif (computer == "rock")& (userchoice == "scissors"):
+        return "you lose";
+    elif (computer == "paper")& (userchoice == "rock"):
+        return "you lose";
+    elif (computer == "paper")& (userchoice == "scissors"):
+        return "you win";
+    elif (computer == "scissors")& (userchoice == "rock"):
+        return "you win";
+    elif (computer == "scissors")& (userchoice == "paper"):
+        return "you lose";
+    }
 });
