@@ -18,15 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
         { return "draw!"; }
         if (computer == "rock")& (userchoice == "paper")
             { return "You win!"; }
-        if (computer == "rock")& (userchoice == "scissors")
-            { return "You lose!"; }
-        if (computer == "paper")& (userchoice == "rock")
-            { return "You lose!"; }
         if (computer == "paper")& (userchoice == "scissors")
             { return "You win!"; }
         if (computer == "scissors")& (userchoice == "rock")
             { return "You win!"; }
-        if (computer == "scissors")& (userchoice == "paper")
+        else
             { return "You lose!"; }
     }
 });
