@@ -16,17 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
     function calculatewinner(userchoice, computer){
         if (computer == userchoice)
         { return "draw!"; }
-        elif (computer == "rock")& (userchoice == "paper")
+        if (computer == "rock")& (userchoice == "paper")
             { return "You win!"; }
-        elif (computer == "rock")& (userchoice == "scissors")
+        if (computer == "rock")& (userchoice == "scissors")
             { return "You lose!"; }
-        elif (computer == "paper")& (userchoice == "rock")
+        if (computer == "paper")& (userchoice == "rock")
             { return "You lose!"; }
-        elif (computer == "paper")& (userchoice == "scissors")
+        if (computer == "paper")& (userchoice == "scissors")
             { return "You win!"; }
-        elif (computer == "scissors")& (userchoice == "rock")
+        if (computer == "scissors")& (userchoice == "rock")
             { return "You win!"; }
-        elif (computer == "scissors")& (userchoice == "paper")
+        if (computer == "scissors")& (userchoice == "paper")
             { return "You lose!"; }
     }
 });
