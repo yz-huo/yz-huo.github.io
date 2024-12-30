@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function calculatewinner(userchoice, computer){
         if (computer == userchoice)
         { return "draw!"; }
-        if (computer == "rock")&& (userchoice == "paper")
+        if (computer == "rock" && userchoice == "paper")
             { return "You win!"; }
-        if (computer == "paper")&& (userchoice == "scissors")
+        if (computer == "paper" && userchoice == "scissors")
             { return "You win!"; }
-        if (computer == "scissors")&& (userchoice == "rock")
+        if (computer == "scissors" && userchoice == "rock")
             { return "You win!"; }
         else
             { return "You lose!"; }
