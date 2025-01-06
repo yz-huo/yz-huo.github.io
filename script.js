@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("results").innerText =
                     `You chose ${userchoice}. Computer chose ${computer}. ${results}`;
         
-            if (result === "You win!") {
+            if (results === "You win!") {
                 myscore++;
-            } else if (result === "You lose!") {
+            } else if (results === "You lose!") {
                 computerscore++;
             }
             rounds++;
