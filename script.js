@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const userchoice = button.id;
             const computer = options[Math.floor(Math.random() * 3)];
             const results = calculatewinner(userchoice, computer);
-
+            // make 2 variables about the scores
+            // the outputs (the overall score) and inputs (the score itself & results) necessary
+            // are going to increase or decrease
+        
             document.getElementById("results").innerText =
                     `You chose ${userchoice}. Computer chose ${computer}. ${results}`;
                 });
@@ -24,5 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
             { return "You win!"; }
         else
             { return "You lose!"; }
+    // add the overall score here
     }
 });
