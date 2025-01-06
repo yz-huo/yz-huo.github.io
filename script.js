@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const options = ["rock", "paper", "scissors"];
+    let myscore = 0;
+    let computerscore = 0;
 
+    
     document.querySelectorAll("button").forEach(button => {
         button.addEventListener("click", () => {
             const userchoice = button.id;
@@ -12,6 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
         
             document.getElementById("results").innerText =
                     `You chose ${userchoice}. Computer chose ${computer}. ${results}`;
+        
+            if (result === "You win!") {
+                myscore++;
+            } else if (result === "You lose!") {
+                computerscore++;
+            }
+            rounds++;
+    
+            document.getElementById("myscore").innerText = myscore;
+            document.getElementById("computerscore").innerText = computerscore;
                 });
               });
 
