@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = ["rock", "paper", "scissors"];
     let myscore = 0;
     let computerscore = 0;
+    let rounds = 0;
 
     
     document.querySelectorAll("button").forEach(button => {
