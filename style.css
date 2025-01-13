@@ -44,6 +44,17 @@ body {
     cursor: pointer;
 }
 
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:24px;
+    background-color: #ee948d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 button {
     padding: 10px 20px; 
     margin: 10px;
