@@ -26,8 +26,8 @@ body {
 
 #computerscore {
     position: absolute;
-    top: 155px;
-    left: 175px;
+    top: 800px;
+    left: 190px;
     font-size:24px;
     background-color: #ee948d;
     border-radius: 10px;
@@ -36,7 +36,7 @@ body {
 
 #myscore {
     position: absolute;
-    top: 155px;
+    top: 800px;
     left: 150px;
     font-size:24px;
     background-color: #ee948d;
