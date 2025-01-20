@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             rounds++;
     
-            document.getElementById("myscore").innerText = myscore;
+            document.querySelector('#myscore .dynamic-score').textContent = myscore;
             document.getElementById("computerscore").innerText = computerscore;
                 });
               });

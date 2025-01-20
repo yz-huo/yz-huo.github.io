@@ -26,8 +26,8 @@ body {
 
 #computerscore {
     position: absolute;
-    top: 650px;
-    left: 300px;
+    top: 675px;
+    left: 700px;
     font-size:24px;
     background-color: #ee948d;
     border-radius: 10px;
@@ -36,24 +36,14 @@ body {
 
 #myscore {
     position: absolute;
-    top: 650px;
-    left: 285px;
+    top: 675px;
+    left: 800px;
     font-size:24px;
     background-color: #ee948d;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:24px;
-    background-color: #ee948d;
-    border-radius: 10px;
-    cursor: pointer;
-}
 
 button {
     padding: 10px 20px; 
