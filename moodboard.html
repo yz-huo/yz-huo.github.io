@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>my moodboard 🫧</h2>
+    <div class="image-container">
+        <img src="pic_1.jpg" alt="Pic 1" width="358" height="525">
+    </div>
+    </body>
+    <style>
+        .image-container {
+          width: 300px;         
+          overflow: hidden;      /* Prevents the image from spilling outside the container */
+          border: 2px solid #333;
+          border-radius: 10px;
+        }
+    
+        .image-container img {
+          width: 100%;
+          transition: transform 0.3s ease-in-out;  /* Smooth zoom effect */
+        }
+    
+        /* Hover Effect */
+        .image-container img:hover {
+          transform: scale(1.2);  /* Makes the image 20% bigger */
+        }
+      </style>
+</html>
