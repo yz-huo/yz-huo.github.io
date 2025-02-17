@@ -59,10 +59,14 @@ button {
 }
 
 .image-container {
-  width: 300px;           
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 10px;
+  gap: 10px;
+  /* width: 300px;           
   height: 200px;          
-  overflow: hidden;       
-  border: 2px solid #333; 
+  overflow: hidden;        */
+  border: 2px solid #FEFEFE; 
   border-radius: 10px;    
 }
 
@@ -73,6 +77,5 @@ button {
 }
 
 .image-container img:hover {
-    transform: scale(1.5);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.2); 
 }
