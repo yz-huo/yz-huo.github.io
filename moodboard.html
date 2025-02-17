@@ -11,31 +11,52 @@
     <div class="image-container">
         <img src="pic_1.jpg" alt="Pic 1" width="358" height="525">
     </div>
-    <div class="image-container">
+    <div class="image-container2">
       <img src="pic_2.jpg" alt="Pic 2" width="418" height="557">
     </div>
-    <div class="image-container">
+    <div class="image-container3">
       <img src="pic_3.jpg" alt="Pic 3" width="736" height="736">
     </div>
     </body>
     <style>
         .image-container {
-          width: 179px;
-          height: 263px;
+          width: 200px;
+          height: 280px;
           margin-left: 10px;
           margin-top: 10px;         
           overflow: hidden;      /* Prevents the image from spilling outside the container */
-          border: 2px solid #FEFEFE;
+          border: 2px solid #000000;
           border-radius: 10px;
         }
     
         .image-container img {
-          width: 106%;
+          width: 100%;
+          height: 100%;
           transition: transform 0.3s ease-in-out;  /* Smooth zoom effect */
         }
     
         /* Hover Effect */
         .image-container img:hover {
+          transform: scale(1.2);  /* Makes the image 20% bigger */
+        }
+
+        .image-container2 {
+          width: 209px;
+          height: 279px;
+          margin-left: 250px;
+          margin-top: -288px;         
+          overflow: hidden;      /* Prevents the image from spilling outside the container */
+          border: 2px solid #FEFEFE;
+          border-radius: 10px;
+        }
+    
+        .image-container2 img {
+          width: 110%;
+          transition: transform 0.3s ease-in-out;  /* Smooth zoom effect */
+        }
+    
+        /* Hover Effect */
+        .image-container2 img:hover {
           transform: scale(1.2);  /* Makes the image 20% bigger */
         }
       </style>
