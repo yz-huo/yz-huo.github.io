@@ -59,23 +59,18 @@ button {
 }
 
 .image-container {
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  padding: 10px;
-  gap: 10px;
-  /* width: 300px;           
-  height: 200px;          
-  overflow: hidden;        */
-  border: 2px solid #FEFEFE; 
-  border-radius: 10px;    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 10px;
 }
 
 .image-container img {
-  width: 100%;            
-  height: auto; 
-  transition: transform 0.3s ease;          
+    width: 100%;
+    height: auto;
 }
 
 .image-container img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.3);
 }
+
