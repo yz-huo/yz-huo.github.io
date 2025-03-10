@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moodboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moodboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); /* Half size */
+      gap: 10px; /* Slightly reduced gap */
+    }
+
+    .grid-item {
+      overflow: hidden;
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .grid-item img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
-    <h2>my moodboard 🫧</h2>
-    <div class="image-container">
-        <img src="pic_1.jpg" alt="Pic 1">
-        <img src="pic_2.jpg" alt="Pic 2">
-        <img src="pic_3.jpg" alt="Pic 3">
-    </div>
-    </body>
-    <style>
-        .image-container {
-          width: 200px;
-          height: 280px;
-          margin-left: 10px;
-          margin-top: 10px;         
-          overflow: hidden;      /* Prevents the image from spilling outside the container */
-          border: 2px solid #000000;
-          border-radius: 10px;
-        }
-    
-        .image-container img {
-          width: 100%;
-          height: 100%;
-          transition: transform 0.3s ease-in-out;  /* Smooth zoom effect */
-        }
-    
-        /* Hover Effect */
-        .image-container img:hover {
-          transform: scale(1.2);  /* Makes the image 20% bigger */
-        }
 
-        .image-container2 {
-          width: 209px;
-          height: 279px;
-          margin-left: 250px;
-          margin-top: -288px;         
-          overflow: hidden;      /* Prevents the image from spilling outside the container */
-          border: 2px solid #FEFEFE;
-          border-radius: 10px;
-        }
-    
-        .image-container2 img {
-          width: 110%;
-          transition: transform 0.3s ease-in-out;  /* Smooth zoom effect */
-        }
-    
-        /* Hover Effect */
-        .image-container2 img:hover {
-          transform: scale(1.2);  /* Makes the image 20% bigger */
-        }
-      </style>
+  <h2>my moodboard 🫧</h2>
+  <div class="grid-container">
+    <div class="grid-item"><img src="pic_1.jpg" alt="Pic 1"></div>
+    <div class="grid-item"><img src="pic_2.jpg" alt="Pic 2"></div>
+    <div class="grid-item"><img src="pic_3.jpg" alt="Pic 3"></div>
+    <!-- Add more images here -->
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const items = document.querySelectorAll('.grid-item');
+
+      items.forEach(item => {
+        const img = item.querySelector('img');
+        const { naturalWidth: w, naturalHeight: h } = img;
+
+        // Set aspect ratio dynamically to half the original size
+        item.style.aspectRatio = `${w} / ${h}`;
+      });
+    });
+  </script>
+
+</body>
 </html>
